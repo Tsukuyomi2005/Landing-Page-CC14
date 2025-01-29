@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbe8d3;
+    color: #6b4226;
+    box-sizing: border-box; /* Ensure padding doesn't mess with element sizing */
+}
+
+/* Navigation Bar Inside Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fbe8d3;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+}
+
+/* Navbar Container */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3em;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #FF6600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #f4a261;
+    padding: 5px 20px; /* Decreased padding to control background size */
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px; /* Adjusted padding to control the size */
+    display: inline-block; /* Allowing the background to wrap only the text */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffcc80;
+    color: #6b4226;
+    box-sizing: border-box;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #e65100;
+}
+
+/* About Section Styles */
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+/* About Container (Text + Image) */
+.about-container {
+    display: flex;
+    flex-direction: column; /* Changed from row to column for responsive layout */
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #fff5e6; /* Background color updated */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Content (Text and Image together) */
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensures text and image wrap properly */
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* About Title */
+.about-title {
+    font-size: 2.5em;
+    color: #FF6600;
+    font-weight: bold;
+    margin-right: 400px;
+    margin-bottom: -25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* About Text */
+.about-text {
+    flex: 1;
+    font-size: 1.2em;
+    color: #6b4226;
+    line-height: 1.5;
+    padding: 20px;
+    max-width: 600px; /* Limits the text width to prevent excessive stretching */
+}
+
+/* About Image */
+.about-image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid #6b4226;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.cookie-gallery {
+    margin-top: 20px;
+}
+
+.cookie-strip {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cookie-item {
+    width: 250px;
+    background-color: #d1b7a1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-item:hover {
+    background-color: #b99f81;
+}
+
+.cookie-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cookie-description {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Order Buttons */
+.cookie-item .btn, .banner .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-item .btn:hover, .banner .btn:hover {
+    background-color: #e65100;
+}
+
+/* Align "Choose Your Favorite Cookie" to Center */
+.cookie-gallery h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #6b4226;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f4a261;
+    color: #fbe8d3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fbe8d3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
